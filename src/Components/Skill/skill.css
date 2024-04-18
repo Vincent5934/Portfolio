@@ -41,8 +41,6 @@ h3 {
     text-align: center;
 }
 
-
-
 p {
     color:grey;
     font-size : 22px;
@@ -50,5 +48,11 @@ p {
 }
 
 .logo {
-width:50%;
+width:100px;
+height:100px;
+}
+
+.logoReact {
+    width:100px;
+    height:76px;
 }

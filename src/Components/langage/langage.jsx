@@ -1,7 +1,7 @@
 import image from "../../Assets/scott-graham-5fNmWej4tAA-unsplash.jpg"
 import "./langage.css"
 import datas from "../../Datas/logo.json"
-import SmallCards from "../SmallCards/SmallCards"
+import SmallCards from "../Cards/SmallCards/SmallCards"
 
 const Langage = () => {
   return (

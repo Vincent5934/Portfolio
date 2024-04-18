@@ -1,3 +1,5 @@
+import Form from "../Components/Form/Form";
+import Gallery from "../Components/Gallery/Large/LargeGallery";
 import Header from "../Components/Header/Header";
 import Skill from "../Components/Skill/Skill";
 
@@ -11,7 +13,8 @@ const Homepage = () => {
         <Header/>
         <Skill/>
         <Langage />
-       
+        <Gallery />
+        <Form />       
         </>
      );
 }

@@ -1,9 +1,12 @@
 import "./header.css"
 import logo from "../../Assets/logo.png"
+import SmallGallery from "../Gallery/Small/SmallGallery";
 
 
 const Header = () => {
     return (
+        <>
+        
         <div className="headerContainer">
             <div className="navbar">
                 <img src={logo} alt="logo" />
@@ -15,8 +18,9 @@ const Header = () => {
                 </div>
             </div>
             <h1>Appréhender votre projet différement. Je relève le défi.<br></br>Et vous?</h1>
+            <SmallGallery/>
         </div>
-
+</>
     );
 }
 

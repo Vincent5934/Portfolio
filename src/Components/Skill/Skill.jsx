@@ -9,7 +9,7 @@ const Skill = () => {
        <h2>Different comment ?</h2>
        <div className="largeContainer">
         <div className="smallContainer">
-            <img src={logoReact} alt="logo React" className="logo" />
+            <img src={logoReact} alt="logo React" className="logoReact" />
             <h3>REACT</h3>
             <p>Spécialiste REACT, je mets à votre disposition toute la puissance de cet outil pour créer votre projet. Votre site Internet sera et restera à la pointe de la technologie.</p>
             <a href="https://fr.react.dev/">En savoir plus</a>

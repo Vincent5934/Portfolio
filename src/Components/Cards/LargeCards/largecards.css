@@ -1,0 +1,21 @@
+.largecards {
+    width:500px;
+    height:500px;
+    position:relative;
+    box-shadow: 3px 3px 10px 5px grey;
+    border-radius: 10px; 
+}
+
+.largecards:hover {
+    cursor: pointer;
+    animation: translateY 0.3s ease-in-out forwards;
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
