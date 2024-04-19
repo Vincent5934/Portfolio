@@ -1,12 +1,12 @@
 .smallcards {
-width:20%;
-height:200px;
-position: relative;
-display: flex;
-justify-content: center;
+    width: 20%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.smallcards__logo{
-    width:200px;
-    height:200px;
+.smallcards__logo {
+    width: 150px;
+    height: 150px;
 }

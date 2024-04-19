@@ -1,18 +1,17 @@
 .gallery {
-    width:90%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* height:1000px; */
-    min-height:100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    gap:100px;
+    justify-content: space-around;
+    gap: 100px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
 .galleryTitle {
     text-align: center;
-    padding-top:50px;
+    padding-top: 50px;
 }

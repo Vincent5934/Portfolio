@@ -6,7 +6,7 @@ import SmallCards from "../Cards/SmallCards/SmallCards"
 const Langage = () => {
   return (
     <>
-      <img src={image} alt="" className="image" />
+      <img src={image} alt="réunion de travail" className="image" />
       <div className="glass">
         <h2 className="glassTitle">Donnez vie à votre projet</h2>
         <p className="glass__p">Faites moi part de vos besoins, de vos attentes, de vos objetcifs. Faites moi découvrir votre secteur d'activité,<br></br>ses avantages, ses inconvénients et je sélectionnerai pour vous les technologies les plus adaptées pour répondre à votre demande.</p>
@@ -25,8 +25,6 @@ const Langage = () => {
           </>
         </div>
       </div>
-
-
     </>
   );
 }
