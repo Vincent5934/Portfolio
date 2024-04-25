@@ -8,7 +8,7 @@ form {
     width: 50%;
     height: 400px;
     position: relative;
-    top: 100px;
+    top: 50px;
     left: 150px;
     display: flex;
     flex-direction: column;
@@ -28,22 +28,26 @@ form input {
     border-radius: 5px;
     border: 1px solid;
     width: 30%;
-    height: 130%;
+    height: 100%;
     font-size: 16px;
 }
 
 .formText {
     display: flex;
     gap: 20px;
+    align-items: center;
+
 }
 
-.formNumber {
+.formContact {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 textarea {
     width: 500px;
+    height:300px;
     background: transparent;
     border-radius: 5px;
     border: 1px solid;

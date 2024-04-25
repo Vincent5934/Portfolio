@@ -6,7 +6,7 @@ const Gallery = () => {
     return (
         <>
             <h2 className="galleryTitle">Mes Réalisations</h2>
-            <div className="gallery">
+            <div className="gallery"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 {dataGallery.map(data => {
                     return (
                         <LargeCards

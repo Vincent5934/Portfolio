@@ -4,18 +4,21 @@
     position:relative;
     box-shadow: 3px 3px 10px 5px grey;
     border-radius: 10px; 
-}
-
-.largecards:hover {
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
     cursor: pointer;
-    animation: translateY 0.3s ease-in-out forwards;
 }
 
-@keyframes translateY {
+.largecards:hover{
+    transform:translateY(-10px);
+}
+
+/* @keyframes enterTranslateY {
     from {
         transform: translateY(0);
     }
     to {
         transform: translateY(-10px);
     }
-}
+} */

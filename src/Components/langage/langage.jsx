@@ -10,7 +10,7 @@ const Langage = () => {
       <div className="glass">
         <h2 className="glassTitle">Donnez vie à votre projet</h2>
         <p className="glass__p">Faites moi part de vos besoins, de vos attentes, de vos objetcifs. Faites moi découvrir votre secteur d'activité,<br></br>ses avantages, ses inconvénients et je sélectionnerai pour vous les technologies les plus adaptées pour répondre à votre demande.</p>
-        <div className="langage__smallcards">
+        <div className="langage__smallcards" >
           <>
             {datas.map(data => {
               return (
@@ -19,6 +19,7 @@ const Langage = () => {
                   id={data.id}
                   title={data.title}
                   pictures={data.pictures}
+                 
                 />
               )
             })}

@@ -9,7 +9,27 @@
     gap: 100px;
     padding-top: 50px;
     padding-bottom: 100px;
+    /* animation: test ease-out 0.3s;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%; */
+   
+    
+    
+    
 }
+
+
+@keyframes test {
+    from {
+        transform :translateY(500px);
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}
+
 
 .galleryTitle {
     text-align: center;
