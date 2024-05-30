@@ -1,7 +1,12 @@
 import "./mediumcards.css"
 
+
 const MediumCards = () => {
-    return (<></>);
+    return (
+    <>
+           
+                </>
+    );
 }
 
 export default MediumCards;

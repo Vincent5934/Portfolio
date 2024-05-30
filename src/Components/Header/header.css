@@ -19,7 +19,7 @@
     gap: 30px;
 }
 
-.navbar__text p {
+.navbar__text a {
     color: white;
     font-size: 24px;
 }
@@ -39,4 +39,8 @@ h1 {
     top: 150px;
     display: flex;
     justify-content: center;
+}
+
+.test {
+width:15%;
 }

@@ -5,11 +5,8 @@ import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const form = useRef();
-
-
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs
             .sendForm('service_42zm5b5', 'template_xf3eo4k', form.current, {
                 publicKey: 'dJDY4-Ed0bkQTlSuz',
@@ -22,17 +19,15 @@ const Form = () => {
                     alert('Message non envoyé. Veuillez remplir les champs demandés', error.text);
                 },
             );
-
     };
 
     return (
         <div className="formBackground">
-            <h2 className="formTitle">Prêt à relever le défi? Contactez-moi.</h2>
-            <div className="form">
+            <h2 className="formTitle" id="contact" >Prêt à relever le défi? Contactez-moi.</h2>
                 <form ref={form} onSubmit={sendEmail}  >
                     <div className="formText">
                         <label>Nom</label>
-                        <input type="text" name="user_lastname" />
+                        <input type="text" name="user_lastname" required="required" />
                         <label>Prénom</label>
                         <input type="text" name="user_firstname" />
                         <label>Société</label>
@@ -40,17 +35,17 @@ const Form = () => {
                     </div>
                     <div className="formContact">
                         <label>Email</label>
-                        <input type="email" name="user_email" />
+                        <input type="email" name="user_email" required="required" />
                         <label>Téléphone</label>
                         <input type="mobile" name="user_mobile" />
                     </div>
+               
                     <label>Message</label>
                     <textarea name="user_message" />
                     <input type="submit" value="Envoyer" className="button" />
+                   
                 </form>
-            </div>
         </div>
     );
 }
-
 export default Form;
