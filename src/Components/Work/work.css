@@ -22,7 +22,8 @@
     position: relative;
     top: 15px;
     border-radius: 10px;
-    left: 25px
+    left: 25px;
+   
 }
 
 .workCards {
@@ -62,8 +63,13 @@
 }
 
 .workLogo {
-    width: 5%;
-    bottom: 20px;
+    width:50px;
+    padding:0px 20px 0px 10px;
+}
+
+.workLogoContainer {
+    width:100%;
     position: absolute;
-    left: 25px;
+    bottom:15px;
+    left:20px;
 }

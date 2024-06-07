@@ -74,7 +74,8 @@ export const workDatas = [
         "logo" : [
             "https://i.postimg.cc/Gh1qLZRb/javascript-1.png",
             "https://i.postimg.cc/JhvjXpxx/logoCSS3.png",
-            "https://i.postimg.cc/KYRn46P4/github.png"
+            "https://i.postimg.cc/KYRn46P4/github.png",
+            "https://i.postimg.cc/d0rphGbW/Node.webp"
         ]
     },
     {
@@ -133,9 +134,6 @@ export const workDatas = [
             "https://i.postimg.cc/JhvjXpxx/logoCSS3.png",
             "https://i.postimg.cc/Gh1qLZRb/javascript-1.png",
             "https://i.postimg.cc/KYRn46P4/github.png",
-            "https://i.postimg.cc/XvF7HLg7/swagger.png",
-            "https://i.postimg.cc/d3TY3tSQ/seo.jpg",
-            "https://i.postimg.cc/43mZq5bh/wave.png"
         ]
     }
 ]
