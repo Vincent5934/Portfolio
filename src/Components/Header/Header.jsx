@@ -1,24 +1,33 @@
 import "./header.css"
-import logo from "../../Assets/logo_2.png"
-import SmallGallery from "../Gallery/Small/SmallGallery";
+import logoReact from "../../Assets/react.png"
+import langage from "../../Assets/langage.png"
+import agile from "../../Assets/agile.png"
 
 const Header = () => {
     return (
-        <>
-            <div className="headerContainer">
-                <div className="navbar">
-                    <img src={logo} alt="logo" className="test" />
-                    <div className="navbar__text">
-                        <a href="#réalisation">Réalisations</a>
-                        <a href="#contact">Contact</a>
-                        <a href="parcours">Qui suis-je?</a>
-                    </div>
+        <div className="headerContainer">
+            <h2>Different comment ?</h2>
+            <div className="headerLargeContainer">
+                <div className="headerSmallContainer">
+                    <img src={logoReact} alt="logo React" className="logoReact" data-aos="fade-right" data-aos-delay="150" data-aos-duration="400" />
+                    <h3>REACT</h3>
+                    <p>Spécialiste REACT, je mets à votre disposition toute la puissance de cet outil pour créer votre projet. Votre site Internet sera et restera à la pointe de la technologie.</p>
+                    <a href="https://fr.react.dev/">En savoir plus</a>
                 </div>
-                <h1>Appréhender votre projet différement. Je relève le défi.<br/>Et vous?</h1>
-                <SmallGallery />
+                <div className="headerSmallContainer">
+                    <img src={langage} alt="bulle de discussion" className="logo" data-aos="fade-down" data-aos-delay="150" data-aos-duration="400" />
+                    <h3 className="langage">Nous parlons le même langage</h3>
+                    <p>Clients, vente, management, trésorerie, retour sur investissement...mon parcours professionnel à fait de moi un homme de terrain me permettant d'avoir une vision pertinante et réaliste pour votre projet. </p>
+                    <a href="https://fr.react.dev/">En savoir plus</a>
+                </div>
+                <div className="headerSmallContainer">
+                    <img src={agile} alt="" className="logo" data-aos="fade-left" data-aos-delay="150" data-aos-duration="400" />
+                    <h3 className="langage">Gestion de projet </h3>
+                    <p>Votre projet sera réalisé avec la méthode Agile. Vous serez au centre de ce dernier. Je privilégie les individus plutôt que les processus; une collaboration avec vous plutôt qu'une négociattion contractuelle.</p>
+                    <a href="https://www.youtube.com/watch?v=weP6BLvfzG8">En savoir plus</a>
+                </div>
             </div>
-        </>
+        </div>
     );
 }
-
 export default Header;
