@@ -3,18 +3,19 @@ import { workDatas } from "../../Datas/Datas";
 import { Link } from "react-router-dom";
 
 const Work = () => {
+
   return (
     <section id="réalisations">
       <h2 className="workTitle" id="réalisation">Mes Réalisations</h2>
       <div className="workContainer" >
         {workDatas.map((Datas) => (
-          <div className="workCards" key={Datas.id}>
-            <img src={Datas.pictures} alt="" className="workPictures" />
+          <div className="workCards" key={Datas.id} >
+            <Link to={Datas.webSite} target="_blank" ><img src={Datas.pictures} alt="" className="workPictures" /></Link>
             <h3 className="workDatasTitle">{Datas.title}</h3>
             <p className="workDatasText">{Datas.description}</p>
-            <Link to={Datas.lien} target="_blank" className="workDatasLien" >lien Github</Link>
+            <Link to={Datas.lienGithub} target="_blank" className="workDatasLien" >lien Github</Link>
             <div className="workLogoContainer">
-            <img src={Datas.logo[0]} alt="" className="workLogo"/>
+            <img src={Datas.logo[0]} alt="" className="workLogo" />
             <img src={Datas.logo[1]} alt="" className="workLogo"/>
             <img src={Datas.logo[2]} alt="" className="workLogo"/>
             <img src={Datas.logo[3]} alt="" className="workLogo"/>

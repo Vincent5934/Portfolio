@@ -5,7 +5,6 @@ import Hero from "../Components/Hero/Hero";
 import Skills from "../Components/Skills/Skills";
 import Work from "../Components/Work/Work";
 
-
 const Homepage = () => {
     return ( 
         <>
