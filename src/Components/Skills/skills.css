@@ -1,22 +1,12 @@
-.skillsImage {
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-    opacity: 0.5;
-    position: absolute;
-}
-
 .skillsGlass {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    top: 50px;
-    position: relative;
     width: 90%;
+    min-height: 15vh;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -25,9 +15,19 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+.skillsTitle {
+    width: 90%;
+    color: #0f4ea5;
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+}
 
-.skillsGlassTitle {
-    padding: 30px;
+.skillsText {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .skillsLogo {
@@ -35,14 +35,24 @@
 }
 
 .skillsContainer {
+    width: 90%;
+    margin-bottom: 20px;
     margin-top: 30px;
-    width: 60%;
-    height: 450px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 30px;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .skillsTitle {
+        font-size: 34px;
+    }
+
+    .skillsText {
+        font-size: 22px;
+    }
+
+    .skillsLogo {
+        width: 10%;
+    }
 }

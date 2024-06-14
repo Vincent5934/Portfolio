@@ -1,0 +1,48 @@
+.card {
+    width: 90%;
+    max-width: 500px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 10px 5px grey;
+    border-radius: 20px;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardPictures {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.cardPictures:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.cardText {
+    width: 85%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.lien:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.lienContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}

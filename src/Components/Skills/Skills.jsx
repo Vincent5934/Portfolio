@@ -1,21 +1,25 @@
 import "./skills.css"
-import { skillsDatas } from "../../Datas/Datas"
-import image from "../../Assets/scott-graham-5fNmWej4tAA-unsplash.jpg"
+import skillsDatas from "../../Datas/skillsDatas.json"
 
 const Skills = () => {
     return (
-        <>
-            <img src={image} alt="réunion de travail" className="skillsImage" />
-            <div className="skillsGlass">
-                <h2 className="skillsGlassTitle">Donnez vie à votre projet</h2>
-                <p>Faites moi part de vos besoins, de vos attentes, de vos objetcifs. Faites moi découvrir votre secteur d'activité,<br></br>ses avantages, ses inconvénients et je sélectionnerai pour vous les technologies les plus adaptées pour répondre à votre demande.</p>
-                <div className="skillsContainer">
-                    {skillsDatas.map((Datas) => (
-                        <img src={Datas.pictures} alt="" className="skillsLogo" key={Datas.id} />
-                    ))}
-                </div>
-            </div>
-        </>
+        <section className="skillsGlass">
+            <p className="skillsTitle">Donnez vie à votre projet</p>
+            <p className="skillsText">Faites moi part de vos besoins, de vos attentes, de vos objetcifs. Faites moi découvrir votre secteur d'activité,
+                ses avantages, ses inconvénients et je sélectionnerai pour vous les technologies les plus adaptées
+                pour répondre à votre demande.</p>
+            <figure className="skillsContainer">
+                {skillsDatas.map(item => {
+                    return (<img
+                        key={item.id}
+                        src={item.pictures}
+                        alt={item.title}
+                        className="skillsLogo" />)
+                })}
+            </figure>
+        </section>
     );
 }
+
 export default Skills;
+

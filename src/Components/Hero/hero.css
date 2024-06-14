@@ -1,75 +1,74 @@
 .heroContainer {
-    width: 100%;
-    height: 800px;
     background: linear-gradient(90deg, rgba(15, 78, 165, 1) 25%, rgba(15, 165, 151, 1) 100%);
-}
-
-nav {
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
+    padding: 30px;
+    min-height: 20vh;
 }
 
-.navBarText {
-    display: flex;
-    gap: 30px;
-}
-
-.navBarText a {
-    color: white;
-    font-size: 24px;
-}
-
-.navBarText a:hover {
+.heroContainer a:hover {
     scale: 1.2;
     cursor: pointer;
 }
 
-h1 {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-size: 38px;
-    position: relative;
-    top: 150px;
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 300px;
 }
 
-.heroGallery {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    top: 320px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card1 {
+.heroLogo {
     width: 20%;
-    height: 350px;
-    object-fit: cover;
-    box-shadow: 0 3px 10px 5px grey;
 }
 
-.card2 {
-    width: 15%;
-    height: 300px;
-    object-fit: cover;
-    box-shadow: 0 3px 10px 5px grey;
+h1 {
+    font-size: 18px;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    right: 20%;
+    color: white;
 }
 
-.card3 {
-    width: 10%;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0 3px 10px 5px grey;
+@media screen and (min-width:768px) {
+    .heroContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .heroContainer a {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+        top: 10%;
+    }
+
+    .heroLogo {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    h1 {
+        font-size: 28px;
+        left: 20%;
+        right: 20%;
+    }
+
+    .heroContainer {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    h1 {
+        font-size: 38px;
+        left: 30%;
+    }
 }

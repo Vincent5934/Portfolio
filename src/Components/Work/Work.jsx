@@ -1,33 +1,24 @@
+import Card from "../Card/Card";
 import "./work.css"
-import { workDatas } from "../../Datas/Datas";
-import { Link } from "react-router-dom";
+import workDatas from "../../Datas/workDatas.json"
 
 const Work = () => {
-
-  return (
-    <section id="réalisations">
-      <h2 className="workTitle" id="réalisation">Mes Réalisations</h2>
-      <div className="workContainer" >
-        {workDatas.map((Datas) => (
-          <div className="workCards" key={Datas.id} >
-            <Link to={Datas.webSite} target="_blank" ><img src={Datas.pictures} alt="" className="workPictures" /></Link>
-            <h3 className="workDatasTitle">{Datas.title}</h3>
-            <p className="workDatasText">{Datas.description}</p>
-            <Link to={Datas.lienGithub} target="_blank" className="workDatasLien" >lien Github</Link>
-            <div className="workLogoContainer">
-            <img src={Datas.logo[0]} alt="" className="workLogo" />
-            <img src={Datas.logo[1]} alt="" className="workLogo"/>
-            <img src={Datas.logo[2]} alt="" className="workLogo"/>
-            <img src={Datas.logo[3]} alt="" className="workLogo"/>
-            <img src={Datas.logo[4]} alt="" className="workLogo"/>
-            <img src={Datas.logo[5]} alt="" className="workLogo"/>
-            <img src={Datas.logo[6]} alt="" className="workLogo"/>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-
-  );
+    return (
+        <section className="workGlass" id="réalisation">
+            <figure className="workContainer">
+                {workDatas.map(item => {
+                    return (<Card
+                        key={item.id}
+                        title={item.title}
+                        pictures={item.pictures}
+                        description={item.description}
+                        lienGithub={item.lienGithub}
+                        webSite={item.webSite}
+                    />)
+                })}
+            </figure>
+        </section>
+    )
 }
+
 export default Work;

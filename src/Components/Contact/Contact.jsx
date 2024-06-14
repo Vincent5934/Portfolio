@@ -1,8 +1,9 @@
 import "./contact.css"
-import React, { useRef } from 'react';
+import { useRef } from "react";
 import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,31 +20,30 @@ const Contact = () => {
                 },
             );
     };
-
     return (
-        <div className="contactBackground">
-            <h2 className="contactTitle" id="contact" >Prêt à relever le défi ? Contactez-moi.</h2>
+        <section className="contactBackground" id="contact">
+            <p className="contactTitle">Prêt à relerver le défi ?<br /> Contactez-moi</p>
             <form ref={form} onSubmit={sendEmail}  >
                 <div className="formText">
-                    <label>Nom</label>
-                    <input type="text" name="user_lastname" required="required" />
-                    <label>Prénom</label>
-                    <input type="text" name="user_firstname" />
-                    <label>Société</label>
-                    <input type="text" name="user_society" />
+                    <label htmlFor="lastname">Nom</label>
+                    <input type="text" id="lastname" name="user_lastname" required="required" />
+                    <label htmlFor="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="user_firstname" />
+                    <label htmlFor="society">Société</label>
+                    <input type="text" id="society" name="user_society" />
+                    <label htmlFor="mail">Email</label>
+                    <input type="email" id="mail" name="user_email" required="required" />
+                    <label htmlFor="mobile">Téléphone</label>
+                    <input type="mobile" id="mobile" name="user_mobile" />
                 </div>
-                <div className="formContact">
-                    <label>Email</label>
-                    <input type="email" name="user_email" required="required" />
-                    <label>Téléphone</label>
-                    <input type="mobile" name="user_mobile" />
+                <div className="formMessage">
+                    <label htmlFor="message">Message</label>
+                    <textarea name="user_message" id="message" />
+                    <input type="submit" value="Envoyer" className="button" />
                 </div>
-                <label>Message</label>
-                <textarea name="user_message" />
-                <input type="submit" value="Envoyer" className="button" />
             </form>
-
-        </div>
+        </section>
     );
 }
+
 export default Contact;
