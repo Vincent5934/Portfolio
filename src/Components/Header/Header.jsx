@@ -1,7 +1,7 @@
 import "./header.css"
-import logoReact from "../../Assets/react.png"
-import langage from "../../Assets/langage.png"
-import agile from "../../Assets/agile.png"
+import logoReact from "../../Assets/react.webp"
+import langage from "../../Assets/langage.webp"
+import agile from "../../Assets/agile.webp"
 
 const Header = () => {
     return (
@@ -26,7 +26,6 @@ const Header = () => {
                     <a href="https://www.wrike.com/fr/project-management-guide/faq/quest-ce-que-la-methodologie-agile-en-gestion-de-projet/" target="_blank" rel="noreferrer">En savoir plus</a>
                 </figure>
             </section>
-
         </>
     );
 }

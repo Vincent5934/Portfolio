@@ -2,46 +2,47 @@
     {
         "id": "1",
         "title": "logo HTML",
-        "pictures": "https://i.postimg.cc/sx0WhQ8F/html5.png"
+        "pictures": "https://i.postimg.cc/j5SKyJ4t/html5-1.webp"
     },
     {
         "id": "2",
         "title": "logo CSS",
-        "pictures": "https://i.postimg.cc/JhvjXpxx/logoCSS3.png"
+        "pictures": "https://i.postimg.cc/Mp084Ysz/logo-CSS3-1.webp"
     },
     {
         "id": "3",
         "title": "logo Javascript",
-        "pictures": "https://i.postimg.cc/Gh1qLZRb/javascript-1.png"
+        "pictures": "https://i.postimg.cc/J7gmB0DC/javascript-1-1.webp"
     },
     {
         "id": "4",
         "title": "logo React",
-        "pictures": "https://i.postimg.cc/G2DYymR9/react.png"
+        "pictures": "https://i.postimg.cc/rp8LLtbx/react-1.webp"
     },
     {
         "id": "5",
         "title": "logo Redux",
-        "pictures": "https://i.postimg.cc/SRJjkMHP/logo-Redux.png"
+        "pictures": "https://i.postimg.cc/sxBrNdLL/logo-Redux-1.webp"
     },
     {
         "id": "6",
         "title": "logo Saas",
-        "pictures": "https://i.postimg.cc/x8G2MTrR/logoSaas.png"
+        "pictures": "https://i.postimg.cc/MHhSk32p/logo-Saas-1.webp"
     },
     {
         "id": "7",
         "title": "logo MongoDB",
-        "pictures": "https://i.postimg.cc/cCNY96V8/mongodb.png"
+        "pictures": "https://i.postimg.cc/NMCtDfdT/mongodb-1.webp"
     },
     {
         "id": "8",
         "title": "logo Github",
-        "pictures": "https://i.postimg.cc/KYRn46P4/github.png"
+        "pictures": "https://i.postimg.cc/Hk1gBN9S/github-1.webp"
     },
     {
         "id": "9",
         "title": "logo Node",
-        "pictures": "https://i.postimg.cc/d0rphGbW/Node.webp"
+        "pictures": "https://i.postimg.cc/15qS0Swn/Node-1.webp"
     }
+   
 ]
